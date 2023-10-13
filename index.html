@@ -199,10 +199,15 @@
       }
 
       .read-more-link,
-      .see-project-link {
+      .see-recipe-link {
         color: var(--main-color);
         text-decoration: none;
         cursor: pointer;
+      }
+
+      .see-recipe-link:hover {
+        transform: scale(1.05, 1.05);
+        transition: 450ms ease-in-out;
       }
 
       .section-variety {
@@ -389,7 +394,7 @@
         color: var(--section-color);
       }
 
-      .dark .see-project-link {
+      .dark .see-recipe-link {
         color: var(--main-color);
       }
 
@@ -485,7 +490,7 @@
               alt="history of Philippine adobo"
             />
           </div>
-          <div class="col-lg about-me mb-5">
+          <div class="col-lg about-me">
             <h4 class="text-start p-3">History</h4>
             <div class="wrap-about-me p-3">
               <p class="text-start about-text">
@@ -513,7 +518,7 @@
     </div>
     <div class="section-about">
       <div class="container">
-        <div class="row pt-5 pb-5 d-flex">
+        <div class="row pb-5 d-flex">
           <div class="col-lg about-me mb-5">
             <h4 class="text-start p-3">Cultural Significance</h4>
             <div class="wrap-about-me p-3">
@@ -556,96 +561,109 @@
       <div class="container mb-3">
         <div class="row">
           <div class="col-sm featured-project mb-5">
-            <div class="card rounded-4 shadow project" style="width: 16rem">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/302/original/pork_adobo.jpeg?1697199400"
-                class="card-img-top rounded-top-4 pork-adobo-picture"
-                alt="pork adobo"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pork</h5>
-                <p class="card-text">
-                  Pork slices cooked in soy sauce, vinegar, and garlic. There
-                  are version wherein onions and potatoes are also added.
-                </p>
-                <a
-                  href="https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/"
-                  class="see-project-link"
-                  title="See recipe"
-                  >See recipe
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+            <a
+              href="https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/"
+              class="see-recipe-link"
+              title="See recipe"
+              target="_blank"
+            >
+              <div class="card rounded-4 shadow project" style="width: 16rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/302/original/pork_adobo.jpeg?1697199400"
+                  class="card-img-top rounded-top-4 pork-adobo-picture"
+                  alt="pork adobo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pork</h5>
+                  <p class="card-text">
+                    Pork slices cooked in soy sauce, vinegar, and garlic. There
+                    are version wherein onions and potatoes are also added.
+                  </p>
+                  <p>
+                    See recipe
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </p>
+                </div></div
+            ></a>
           </div>
           <div class="col-sm featured-project mb-5">
-            <div class="card rounded-4 shadow project" style="width: 16rem">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/297/original/chicken_adobo.jpeg?1697198285"
-                class="card-img-top rounded-top-4"
-                alt="chicken adobo"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Chicken</h5>
-                <p class="card-text">
-                  The taste of juicy chicken in a succulent, umami adobo sauce
-                  makes chicken adobo a comfort food for all ages.
-                </p>
-                <a
-                  href="https://panlasangpinoy.com/filipino-chicken-adobo-recipe/"
-                  class="see-project-link"
-                  title="See recipe"
-                  >See recipe
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+            <a
+              href="https://panlasangpinoy.com/filipino-chicken-adobo-recipe/"
+              class="see-recipe-link"
+              title="See recipe"
+              target="_blank"
+            >
+              <div class="card rounded-4 shadow project" style="width: 16rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/297/original/chicken_adobo.jpeg?1697198285"
+                  class="card-img-top rounded-top-4"
+                  alt="chicken adobo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Chicken</h5>
+                  <p class="card-text">
+                    The taste of juicy chicken in a succulent, delicious umami
+                    adobo sauce makes chicken adobo a comfort food for all ages.
+                  </p>
+                  <p>
+                    See recipe
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </p>
+                </div></div
+            ></a>
           </div>
           <div class="col-sm featured-project mb-5">
-            <div class="card rounded-4 shadow project" style="width: 16rem">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/304/original/adobo_squid.jpeg?1697199698"
-                class="card-img-top rounded-top-4"
-                alt="squid adobo"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Squid</h5>
-                <p class="card-text">
-                  Squid cooked in soy sauce and vinegar then later sautéed in
-                  garlic, onions and tomatoes that brings rich flavors.
-                </p>
-                <a
-                  href="https://panlasangpinoy.com/adobong-pusit-recipe/"
-                  class="see-project-link"
-                  title="See recipe"
-                  >See recipe
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+            <a
+              href="https://panlasangpinoy.com/adobong-pusit-recipe/"
+              class="see-recipe-link"
+              title="See recipe"
+              target="_blank"
+            >
+              <div class="card rounded-4 shadow project" style="width: 16rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/304/original/adobo_squid.jpeg?1697199698"
+                  class="card-img-top rounded-top-4"
+                  alt="squid adobo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Squid</h5>
+                  <p class="card-text">
+                    Squid cooked in soy sauce and vinegar then later sautéed in
+                    garlic, onions and tomatoes that brings rich flavors.
+                  </p>
+                  <p>
+                    See recipe
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </p>
+                </div></div
+            ></a>
           </div>
           <div class="col-sm featured-project mb-5">
-            <div class="card rounded-4 shadow project" style="width: 16rem">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/305/original/string_beans_adobo.jpeg?1697200051"
-                class="card-img-top rounded-top-4"
-                alt="green beans adobo"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Green Beans</h5>
-                <p class="card-text">
-                  A healthy vegetable recipe not just by its nutritional value
-                  which brings out this vegetable’s natural flavor.
-                </p>
-                <a
-                  href="https://panlasangpinoy.com/adobong-sitaw-string-bean-recipe/"
-                  class="see-project-link"
-                  title="See project"
-                  >See project
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+            <a
+              href="https://panlasangpinoy.com/adobong-sitaw-string-bean-recipe/"
+              class="see-recipe-link"
+              title="See project"
+              target="_blank"
+            >
+              <div class="card rounded-4 shadow project" style="width: 16rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/305/original/string_beans_adobo.jpeg?1697200051"
+                  class="card-img-top rounded-top-4"
+                  alt="green beans adobo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Green Beans</h5>
+                  <p class="card-text">
+                    A healthy vegetable recipe, not just by its nutritional
+                    value, brings out natural flavor and balanced taste from
+                    green beans.
+                  </p>
+                  <p>
+                    See recipe
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </p>
+                </div></div
+            ></a>
           </div>
           <div
             class="container mt-3 mb-5 button-section d-flex justify-content-center"
