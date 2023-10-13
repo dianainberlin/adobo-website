@@ -46,8 +46,9 @@
       }
 
       .navbar-brand {
+        font-family: Sarunna;
         line-height: 1.25;
-        font-size: 18px;
+        font-size: 22px;
       }
 
       .nav-item {
@@ -104,7 +105,8 @@
       h1,
       h2,
       h3,
-      h4 {
+      h4,
+      h5 {
         font-family: Suranna;
       }
 
@@ -203,8 +205,8 @@
         cursor: pointer;
       }
 
-      .section-work {
-        background: var(--background-ui-color);
+      .section-variety {
+        background: var(--section-color);
       }
 
       .featured-project {
@@ -219,6 +221,13 @@
       .footer {
         padding-top: 80px;
         padding-bottom: 20px;
+      }
+
+      .diana-shecodes-link {
+        color: var(--main-color);
+        font-family: Sarunna;
+        text-decoration: none;
+        cursor: pointer;
       }
 
       .social-media-icon {
@@ -279,7 +288,8 @@
       .header-subtitle,
       .wrap-about-me,
       .my-profile-photo,
-      .featured-project {
+      .featured-project,
+      .adobo-variety-subtitle {
         animation: fade linear both;
         animation-timeline: view(block);
         animation-range: entry 50% cover 50%;
@@ -349,9 +359,9 @@
       }
 
       .dark .main-button {
-        background: var(--section-color);
+        background: var(--main-color);
         box-shadow: var(--box-shadow);
-        color: var(--main-color);
+        color: var(--section-color);
       }
 
       .dark .secondary-button {
@@ -369,16 +379,14 @@
         color: var(--main-color);
       }
 
-      .dark .section-about {
+      .dark .section-about,
+      .dark .section-variety,
+      .dark .section {
         background: var(--main-color);
       }
 
       .dark .read-more-link {
         color: var(--section-color);
-      }
-
-      .dark .section-work {
-        background: var(--main-color);
       }
 
       .dark .see-project-link {
@@ -416,15 +424,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html" title="About">About</a>
+              <a class="nav-link" href="#about" title="About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/work.html" title="Recipe">Recipe</a>
+              <a class="nav-link" href="#recipes" title="Recipes">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html" title="Contact"
-                >Cook with me</a
-              >
+              <a class="nav-link" href="#contact" title="Contact">Contact</a>
             </li>
             <li class="nav-item nav-moon">
               <i class="fa-regular fa-moon theme-button"></i>
@@ -463,13 +469,13 @@
     </div>
     <div class="section">
       <div class="container">
-        <h3 class="text-center reveal">
+        <h3 class="text-center reveal" id="about">
           "Adobo refers to a method of marinating and stewing for any cut of
           meat or fish in a briny mixture of vinegar, soy sauce, and spices."
         </h3>
       </div>
     </div>
-    <div class="section-about" id="about">
+    <div class="section-about">
       <div class="container">
         <div class="row pt-5 pb-5 d-flex">
           <div class="col-lg my-profile-photo mb-5">
@@ -494,7 +500,10 @@
                 ceviche where raw fish is "washed" with vinegar before being
                 marinated in vinegar or citrus.
               </p>
-              <a href="/about.html" class="read-more-link" title="Read more"
+              <a
+                href="https://en.wikipedia.org/wiki/Philippine_adobo"
+                class="read-more-link"
+                title="Adobo in Wikipedia"
                 >Read more <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -518,7 +527,10 @@
                 family gatherings, bringing people together and creating
                 cherished memories.
               </p>
-              <a href="/about.html" class="read-more-link" title="Read more"
+              <a
+                href="https://businessmirror.com.ph/2023/05/01/history-of-filipino-adobo/"
+                class="read-more-link"
+                title="Adobo in Business Mirror"
                 >Read more <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -533,22 +545,188 @@
         </div>
       </div>
     </div>
+    <div class="section-variety">
+      <div class="container pt-5">
+        <h3 class="text-center" id="recipes">Adobo Varieties and Recipes</h3>
+        <p class="text-center mb-5 adobo-variety-subtitle">
+          Adobo is a dish with many permutations, all of which should be
+          celebrated. Here are the most popular ones.
+        </p>
+      </div>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-sm featured-project mb-5">
+            <div class="card rounded-4 shadow project" style="width: 16rem">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/302/original/pork_adobo.jpeg?1697199400"
+                class="card-img-top rounded-top-4 pork-adobo-picture"
+                alt="pork adobo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pork</h5>
+                <p class="card-text">
+                  Pork slices cooked in soy sauce, vinegar, and garlic. There
+                  are version wherein onions and potatoes are also added.
+                </p>
+                <a
+                  href="https://panlasangpinoy.com/filipino-food-pork-adobo-recipe/"
+                  class="see-project-link"
+                  title="See recipe"
+                  >See recipe
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm featured-project mb-5">
+            <div class="card rounded-4 shadow project" style="width: 16rem">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/297/original/chicken_adobo.jpeg?1697198285"
+                class="card-img-top rounded-top-4"
+                alt="chicken adobo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chicken</h5>
+                <p class="card-text">
+                  The taste of juicy chicken in a succulent, umami adobo sauce
+                  makes chicken adobo a comfort food for all ages.
+                </p>
+                <a
+                  href="https://panlasangpinoy.com/filipino-chicken-adobo-recipe/"
+                  class="see-project-link"
+                  title="See recipe"
+                  >See recipe
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm featured-project mb-5">
+            <div class="card rounded-4 shadow project" style="width: 16rem">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/304/original/adobo_squid.jpeg?1697199698"
+                class="card-img-top rounded-top-4"
+                alt="squid adobo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Squid</h5>
+                <p class="card-text">
+                  Squid cooked in soy sauce and vinegar then later sautéed in
+                  garlic, onions and tomatoes that brings rich flavors.
+                </p>
+                <a
+                  href="https://panlasangpinoy.com/adobong-pusit-recipe/"
+                  class="see-project-link"
+                  title="See recipe"
+                  >See recipe
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm featured-project mb-5">
+            <div class="card rounded-4 shadow project" style="width: 16rem">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/305/original/string_beans_adobo.jpeg?1697200051"
+                class="card-img-top rounded-top-4"
+                alt="green beans adobo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Green Beans</h5>
+                <p class="card-text">
+                  A healthy vegetable recipe not just by its nutritional value
+                  which brings out this vegetable’s natural flavor.
+                </p>
+                <a
+                  href="https://panlasangpinoy.com/adobong-sitaw-string-bean-recipe/"
+                  class="see-project-link"
+                  title="See project"
+                  >See project
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container mt-3 mb-5 button-section d-flex justify-content-center"
+          >
+            <a
+              href="https://panlasangpinoy.com/31-insanely-delicious-adobo-dishes/"
+              class="main-button"
+              title="Discover more varieties of adobo"
+              >Discover other varieties</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section-contact">
       <div class="container pt-5">
-        <h3 class="text-start reveal">Let's work together!</h3>
+        <h3 class="text-start reveal" id="contact">Get in touch!</h3>
         <p class="text-start contact-blurb mt-4 mb-4 reveal">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Want to know more about the latest adobo recipes or cooking classes?
         </p>
         <div class="container mt-3 mb-5 button-section d-flex reveal">
-          <a href="/contact.html" class="main-button" title="Conntact me"
-            >Say hello</a
+          <a
+            href="/diana.d@stayhomeasia.com"
+            class="main-button"
+            title="Conntact me"
+            >Contact us</a
           >
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>
+              Built by
+              <a
+                href="https://www.shecodes.io/graduates/93118-diana-de-castro"
+                target="_blank"
+                title="Diana in SheCodes"
+                class="diana-shecodes-link"
+                >Diana de Castro</a
+              >
+            </p>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-end">
+              <a
+                href="https://github.com/dianainberlin"
+                target="_blank"
+                class="social-media-icon"
+                alt="github"
+                title="github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/diana-decastro/"
+                target="_blank"
+                class="social-media-icon"
+                alt="linkedin"
+                title="linkedin"
+                ><i class="fa-brands fa-linkedin social-media-icon"></i
+              ></a>
+              <a
+                href="https://twitter.com/diana_decastro"
+                target="_blank"
+                class="social-media-icon"
+                alt="twitter"
+                title="twitter"
+                ><i class="fa-brands fa-square-x-twitter social-media-icon"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/dianadecastro/"
+                target="_blank"
+                class="social-media-icon"
+                alt="instagram"
+                title="instagram"
+                ><i class="fa-brands fa-square-instagram social-media-icon"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
